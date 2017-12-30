@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="XCX," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="最近一段时间在学习怎么写小程序，然后自己利用课外时间，也撸了一个。一直都很喜欢网易蜗牛读书这款App，对于喜爱的事物总是情不自禁的，于是就仿照网易蜗牛读书的App简单做了这款小程序。 项目地址：杳杳飞花/Reading项目预览：  项目准备：">
+<meta name="keywords" content="XCX">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wangyi-Reading">
+<meta property="og:url" content="http://yoursite.com/2017/12/30/wangyi-Reading/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="最近一段时间在学习怎么写小程序，然后自己利用课外时间，也撸了一个。一直都很喜欢网易蜗牛读书这款App，对于喜爱的事物总是情不自禁的，于是就仿照网易蜗牛读书的App简单做了这款小程序。 项目地址：杳杳飞花/Reading项目预览：  项目准备：">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/reading.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-985964c783e7bde42bdae79fb574b532_hd.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-19326db440843aa25b219e3fcbc8c63c_hd.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-e9b0e7e2fc3e81b8c25c5b38cb9600d4_hd.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data2.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data3.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data4.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-37f8891696e8daf279bbfb8c1d73a421_hd.jpg">
+<meta property="og:updated_time" content="2017-12-30T08:03:02.722Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="wangyi-Reading">
+<meta name="twitter:description" content="最近一段时间在学习怎么写小程序，然后自己利用课外时间，也撸了一个。一直都很喜欢网易蜗牛读书这款App，对于喜爱的事物总是情不自禁的，于是就仿照网易蜗牛读书的App简单做了这款小程序。 项目地址：杳杳飞花/Reading项目预览：  项目准备：">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/reading.gif">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/12/30/wangyi-Reading/"/>
+
+
+
+
+
+  <title>wangyi-Reading | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            Über
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Kategorien
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/30/wangyi-Reading/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">wangyi-Reading</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-30T15:59:20+08:00">
+                2017-12-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近一段时间在学习怎么写小程序，然后自己利用课外时间，也撸了一个。一直都很喜欢网易蜗牛读书这款App，对于喜爱的事物总是情不自禁的，于是就仿照网易蜗牛读书的App简单做了这款小程序。</p>
+<h2 id="项目地址：杳杳飞花-Reading"><a href="#项目地址：杳杳飞花-Reading" class="headerlink" title="项目地址：杳杳飞花/Reading"></a>项目地址：<a href="https://github.com/Hwj1220/wangyi_reading" target="_blank" rel="noopener">杳杳飞花/Reading</a></h2><h2 id="项目预览："><a href="#项目预览：" class="headerlink" title="项目预览："></a>项目预览：</h2><p><img src="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/reading.gif" alt="img"> </p>
+<h2 id="项目准备："><a href="#项目准备：" class="headerlink" title="项目准备：    "></a>项目准备：    </h2><a id="more"></a>
+<p>大家若是感兴趣，可以跟着我一起来做哟^_^</p>
+<p>☟ 蓝体点击就能跳转到相应页面进行下载或者查看教程</p>
+<p>1、<a href="https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=201715" target="_blank" rel="noopener">微信开发者工具</a>   他能帮助我们快速的进行小程序的开发。当然，在开发之前我们还需要拥有一个小程序账号（<a href="https://jingyan.baidu.com/article/d7130635decb6a13fdf475d3.html" target="_blank" rel="noopener">注册教程</a>），通过账号我们就能够管理自己的小程序了。需要注意的是，只有满了18岁的童鞋们才可以注册。</p>
+<p>2、<a href="https://pan.baidu.com/s/1c1HxXOs" target="_blank" rel="noopener">vs code</a> （密码：g2g5） 64位系统的，其他版本就自己去搜一下安装包啦。虽然在微信开发者工具里面就能够直接写，但还是喜欢在vs code里面进行coding。这个按大家喜好自由选择哦。</p>
+<p>3、<a href="http://www.iconfont.cn/" target="_blank" rel="noopener">Iconfont-阿里巴巴矢量图标库</a> 一个阿里爸爸做的开源图库，它不仅有几百个公司的开源图标库，还有各式各样的小图标。有了这个图标库真是大大提高了我们的效率，我们能够根据需要进行图标搜索，还能够设置颜色、大小和图片格式。你想要的基本都有哦~</p>
+<p>4、<a href="https://www.easy-mock.com/" target="_blank" rel="noopener">EasyMock 简单高效的伪造数据</a>   用于后台的数据模拟，得到JSON数据，方便开发。</p>
+<p>5、<a href="https://www.w3cschool.cn/weixinapp/9wou1q8j.html" target="_blank" rel="noopener">微信小程序开发文档</a>  W3C的这个文档真是超级详细，我们能够在这里查找到微信小程序的API、组件以及一些框架等。</p>
+<p>另外还使用了一款MarkMan进行测量，但若是追求精准还原的话，还是用PS更细腻。</p>
+<h2 id="项目开发过程："><a href="#项目开发过程：" class="headerlink" title="项目开发过程："></a>项目开发过程：</h2><p>每一次的开发都是一个成长的过程。在开发过程中，我们会遇到各种问题，这就给了我们一个独立思考的空间，能够锻炼我们解决问题和查询文档的能力。当然，在思考查询之后还可以请教他人、进行探讨，这样往往能够帮助我们快速的找到盲点，甚至能够了解到更多我们忽视的点。和别人的交流也是学习中很重要的一环，所以在此分享了自己小小的一点经验，欢迎一起交流，一起学习。</p>
+<h3 id="1、开始项目"><a href="#1、开始项目" class="headerlink" title="1、开始项目"></a>1、开始项目</h3><p>在项目开始时，我们首先在 app.json 文件中配置主体界面，设置好tabBar 。在这里我们对小程序设置确定了一个整体的基调。</p>
+<pre><code>&quot;window&quot;:{
+&quot;backgroundTextStyle&quot;:&quot;light&quot;,
+&quot;navigationBarBackgroundColor&quot;: &quot;#fff&quot;,
+&quot;navigationBarTitleText&quot;: &quot;网易蜗牛读书&quot;,
+&quot;navigationBarTextStyle&quot;:&quot;black&quot;
+  },
+  &quot;tabBar&quot;:{
+&quot;color&quot;:&quot;#999999&quot;,
+&quot;selectedColor&quot;:&quot;#444444&quot;,
+&quot;backgroungColor&quot;:&quot;#ffffff&quot;,
+&quot;borderStyle&quot;:&quot;#e0e0e0&quot;,
+&quot;list&quot;: [
+  {
+    &quot;pagePath&quot;:&quot;pages/leader/leader&quot;,
+    &quot;iconPath&quot;: &quot;assets/icons/lingdu.png&quot;,
+    &quot;selectedIconPath&quot;: &quot;assets/icons/lingdu_sel.png&quot;,
+    &quot;text&quot;:&quot;领读&quot;
+  },
+  {
+    &quot;pagePath&quot;:&quot;pages/stack/stack&quot;,
+    &quot;iconPath&quot;: &quot;assets/icons/stack.png&quot;,
+    &quot;selectedIconPath&quot;: &quot;assets/icons/stack_sel.png&quot;,
+    &quot;text&quot;:&quot;分类&quot;
+  },
+  {
+    &quot;pagePath&quot;: &quot;pages/bookdesk/bookdesk&quot;,
+    &quot;iconPath&quot;: &quot;assets/icons/bookdesk.png&quot;,
+    &quot;selectedIconPath&quot;: &quot;assets/icons/bookdesk_sel.png&quot;,
+    &quot;text&quot;:&quot;书桌&quot;
+  },
+  {
+    &quot;pagePath&quot;:&quot;pages/mine/mine&quot;,
+    &quot;iconPath&quot;: &quot;assets/icons/mine.png&quot;,
+    &quot;selectedIconPath&quot;: &quot;assets/icons/mine_sel.png&quot;,
+    &quot;text&quot;:&quot;我的&quot;
+  }
+]
+ }
+</code></pre><p>对于 pages 页面，在开发过程中进行过很多次调整。到现在为止觉得还算整洁和便于管理了。在起初，不管是一级页面还是二级页面，我都把它们放在了 pages 目录下。这样一开始还不觉得有什么，可是到后来页面越来越多，要对之前写过的页面进行修改和调整的时候，恍然间发现一堆文件夹，查找起来就觉得眼花缭乱，还要和页面进行配对，非常恼火。于是按照页面不同的级别层次，进行了相应的调整。按照不同的tabBar确定了主体的文件夹，然后各级页面又分别在各自所属层级的目录下。另外对于页面的命名尽量通俗易懂，这样方便自己对各页面进行查看和管理。</p>
+<pre><code>&quot;pages&quot;:[
+&quot;pages/index/index&quot;, 
+&quot;pages/leader/leader&quot;,  // 领读人  
+&quot;pages/leader/stories/stories&quot;, 
+&quot;pages/leader/authors/authors&quot;, 
+&quot;pages/stack/stack&quot;,  // 分类
+&quot;pages/stack/booklist/booklist&quot;, 
+&quot;pages/stack/booklist/bookdetail/bookdetail&quot;,
+&quot;pages/bookdesk/bookdesk&quot;,   // 书桌
+&quot;pages/mine/mine&quot;,   // 我的
+&quot;pages/mine/news/news&quot;,    
+&quot;pages/logs/logs&quot; 
+  ],
+</code></pre><p><img src="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-985964c783e7bde42bdae79fb574b532_hd.jpg" alt="img"> </p>
+<p>在分类页面下具有多层级的一个页面创建展示：</p>
+<p><img src="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-19326db440843aa25b219e3fcbc8c63c_hd.jpg" alt="img"> </p>
+<p>所以在项目开始时首先思考的就是文件的排版问题，一个合理的结构，能够增强项目的可读性，以后操作和维护也更加方便，能够节约一定的时间。</p>
+<p>小技巧： 在创建pages页面时，如果我们在微信开发者程序的app.json文件中创建，就会自动的生成相应的文件夹，就不用我们一个一个去创建了。</p>
+<h3 id="2、页面布局和样式"><a href="#2、页面布局和样式" class="headerlink" title="2、页面布局和样式"></a>2、页面布局和样式</h3><p>小程序属于轻量级的应用，所以在忠于原App的基础上，对某些页面进行了一些调整。另外，在这里所有的页面都是我切的，可能会有人说很多页面都可以引用第三方框架，没有必要写原生代码。其实都没有错，要看自己写小程序是为了什么。我做这款小程序是为了学习小程序的开发，另外自己的前端之旅还是刚刚开启，所以为了在 coding 中锻炼自己对各种结构的敏感性，加深自己对样式属性的理解，我选择了自己写原生代码。</p>
+<p>其实第三方框架是非常好的轮子，像微信团队开发的 weui 框架就很好用，它提供了很多的组件，能够让你摆脱切页面的繁琐，减少开发时间。对于 weui 的使用我也不是很熟练，所以在后续的学习中，还会继续修改这个小程序，用不同的方法实现页面。<br>另外，在命名时，我使用了BEM规范，这样便于对页面结构的理解，使代码更易读。BEM命名法则给我们提供了一个很好的模板，在命名中就能体现各个元素之间的关系，CSS的命名更加语义化，元素更易读懂。而且独一无二的命名方式，使得代码能够得到更好的复用。</p>
+<p>stack.wxml</p>
+<p><img src="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-e9b0e7e2fc3e81b8c25c5b38cb9600d4_hd.jpg" alt="img"> </p>
+<h3 id="3、使用-easy-mock-造数据"><a href="#3、使用-easy-mock-造数据" class="headerlink" title="3、使用 easy-mock 造数据"></a>3、使用 easy-mock 造数据</h3><p>写完基本样式之后，要思考的就是数据问题。我们开发的页面很少有静态的。我们把数据写在页面中没有任何意义还平白增加了工作量。此时我们就需要模拟后台数据，让这些数据能够通过请求渲染到页面上。easy-mock 就给我们提供了一个很好的平台来造假数据，然后生成URL 通过 wx.request() 方法来获取数据，实现页面加载数据。</p>
+<p>另外还可以在本地写假数据。今天在阅读别人文章时有看到用require()方式来请求数据的。对于这个不是很懂，通过查询之后才发现这是CommonJS 中的模块实现。实现一项功能的方法有很多种，我觉得我们不能只满足于一种方法，而应该广泛的涉猎，通过对不同方法的学习，让自己的知识储备更庞大。</p>
+<h2 id="项目基本功能："><a href="#项目基本功能：" class="headerlink" title="项目基本功能："></a>项目基本功能：</h2><h3 id="1、小程序启动页面的实现"><a href="#1、小程序启动页面的实现" class="headerlink" title="1、小程序启动页面的实现"></a>1、小程序启动页面的实现</h3><p>在这里我使用了setInterval（）和clearInterval（）方法来实现，然后通过switchTab来实现跳转</p>
+<pre><code>Page({
+  data: {
+    time:3
+  },
+  onLoad: function () {
+    var count = setInterval(()=&gt;{   
+      this.setData({
+        time : this.data.time -1
+      });
+      if(this.data.time == 0) {  
+        wx.switchTab({
+          url:&apos;../leader/leader&apos;,
+          complete:function(res) {
+          }
+        })
+        clearInterval(count);
+      }
+    },1000);
+  }
+})
+</code></pre><h3 id="2、跳转页面时获取id-获取不同数据"><a href="#2、跳转页面时获取id-获取不同数据" class="headerlink" title="2、跳转页面时获取id, 获取不同数据"></a>2、跳转页面时获取id, 获取不同数据</h3><p>一开始自己对数据获取还不是很熟练，只能进行简单的单页面渲染。后来通过查文档和摸索，逐渐的能够进行复杂一些的数据获取。另外，在setData时，如果不清楚结构，可以使用console.log(); 方法及时的查看数据结构，一层层的剥开找到我们需要的数据层。<br>为了更便于理解，附上两张动图展示，可以发现当我点击不同文章之后，跳转的页面获取的数据也不一样。</p>
+<p>领读</p>
+<p><img src="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data.gif" alt="img"> </p>
+<p>分类</p>
+<p><img src="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data2.gif" alt="img"> </p>
+<p>在这里分类页面的数据更整齐一些，就以它为例来说一说我是如何通过id来动态选择数据的。首先要清楚的是stack分类页面和跳转到的booklist详情页。在这里是通过navigator来跳转的，我们在url中设置表达式来动态获取id，url=”booklist/booklist?id=“，然后在 booklist.js 中，通过获取到的id，进行数据的选择。</p>
+<p>stack:</p>
+<p>stack.wxml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">    &lt;view&gt;</span><br><span class="line">        &lt;view class=&quot;page-search&quot;&gt;&lt;/view&gt;</span><br><span class="line">        &lt;scroll-view wx:for=&quot;&#123;&#123;stack&#125;&#125;&quot; wx:key=&quot;&#123;&#123;index&#125;&#125;&quot; scroll-y=&quot;true&quot;&gt;</span><br><span class="line">            &lt;navigator class=&quot;stack-view &quot; url=&quot;booklist/booklist?id=&#123;&#123;index&#125;&#125;&quot;&gt;</span><br><span class="line">                &lt;image src=&quot;&#123;&#123;item.typeCover&#125;&#125;&quot; class=&quot;stack-image&quot;&gt;&lt;/image&gt;</span><br><span class="line">                &lt;text class=&quot;stack-name&quot;&gt;&#123;&#123;item.bookTypes&#125;&#125;&lt;/text&gt;</span><br><span class="line">                &lt;text class=&quot;stack-numb&quot;&gt;&#123;&#123;item.bookNumb&#125;&#125; &gt;&lt;/text&gt;</span><br><span class="line">            &lt;/navigator&gt;</span><br><span class="line">            &lt;view class=&quot;line&quot;&gt;&lt;/view&gt;</span><br><span class="line">        &lt;/scroll-view&gt;</span><br><span class="line">    &lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<p>stack.js</p>
+<pre><code>  Page({
+  data: {
+    stack:[],
+    id: &quot;&quot;
+  }, 
+  onLoad: function () {
+      var that = this;
+    wx.request({
+      url:&quot;https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo&quot;,
+      success: function(res) {
+        console.log(res.data.data.stack);
+        console.log(res.data.data.List);              
+        that.setData({
+          stack: res.data.data.stack,
+          id: res.data.data.List
+        })
+      }
+    })
+      },   
+})
+</code></pre><p>booklist:</p>
+<p>booklist.wxml
+　</p>
+<pre><code>&lt;view&gt;
+      &lt;view&gt;
+          &lt;view wx:for=&quot;{{bookList}}&quot; wx:key=&quot;{{index}}&quot;&gt;
+          &lt;view class=&quot;book-list-root&quot; bindtap=&quot;bindViewTap&quot;&gt;  
+              &lt;view class=&quot;book-list-child&quot;&gt;
+              &lt;view&gt;
+                  &lt;text class=&quot;book-list-name&quot;&gt;{{item.bookName}}&lt;/text&gt;
+              &lt;/view&gt;
+              &lt;view&gt;
+                  &lt;text class=&quot;book-list-autor&quot;&gt;{{item.authorName}}&lt;/text&gt;
+              &lt;/view&gt;
+              &lt;view class=&quot;book-list-des&quot;&gt;
+                  &lt;text&gt;{{item.bookDes}}&lt;/text&gt;
+              &lt;/view&gt;
+              &lt;/view&gt;
+          &lt;/view&gt;
+          &lt;view class=&quot;line&quot;&gt;&lt;/view&gt;            
+          &lt;/view&gt;
+      &lt;/view&gt;
+      &lt;/view&gt;
+</code></pre><p>booklist.js</p>
+<pre><code>  Page({
+data: {
+    bookList:[],
+    stack:[]
+  },
+onLoad: function (params) {
+  var that = this;
+    wx.request({
+  url:&quot;https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo&quot;,
+  success: function(res) {
+    that.setData({
+      bookList: res.data.data.stack[params.id].List.bookList,
+    })  
+  }
+    })
+    },
+})
+</code></pre><h3 id="3、对navigationBarTitleText的动态修改"><a href="#3、对navigationBarTitleText的动态修改" class="headerlink" title="3、对navigationBarTitleText的动态修改"></a>3、对navigationBarTitleText的动态修改</h3><p><img src="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data3.gif" alt="img"> </p>
+<p>在各个页面的JSON文件中，我们能够设置页面的标题，但是当我们进入不同页面需要获取不同标题时，就需要动态的进行修改。其实实现起来很简单，我们知道通过wx.setNavigationBarTitle() 方法就能够修改页面标题，然后跟第二点所述的方式一样，通过id来达到动态获取的效果。</p>
+<p>另外要注意的是，我们要将JSON中的navigationBarTitleText设置为空，这样在跳转的过程中就不会有原始标题和修改标题之间跳转的一个效果，而是直接显示需要的标题。</p>
+<pre><code> .json
+  {
+      &quot;navigationBarBackgroundColor&quot;: &quot;#fff&quot;,
+      &quot;navigationBarTitleText&quot;: &quot; &quot;,
+      &quot;navigationBarTextStyle&quot;: &quot;black&quot;
+  }
+   .js
+onLoad: function (params) {
+  var that = this;
+    wx.request({
+      url:&quot;https://www.easy-mock.com/mock/5a23a9a2ff38a436c591b6fa/getArticInfo&quot;,
+      success: function(res) {
+    var bTypes = res.data.data.stack[params.id].bookTypes;
+    wx.setNavigationBarTitle({ 
+      title: bTypes,
+    },1);
+      }
+    })
+  },
+</code></pre><h3 id="4、两种页面跳转方式"><a href="#4、两种页面跳转方式" class="headerlink" title="4、两种页面跳转方式"></a>4、两种页面跳转方式</h3><h4 id="（1）使用-navigator-方式"><a href="#（1）使用-navigator-方式" class="headerlink" title="（1）使用 navigator 方式"></a>（1）使用 navigator 方式</h4><p>navigator的跳转能够保留当前页面，可返回</p>
+<pre><code>&lt;navigator class=&quot;stack-view &quot; url=&quot;booklist/booklist?id={{index}}&quot;&gt;
+  //  点击部位，触发即可跳转
+  &lt;/navigator&gt;
+
+  &lt;view class=&quot;page__bd-items page-flex&quot; bindtap=&quot;tomyNews&quot;&gt;
+      &lt;view class=&quot;page-items-lt&quot;&gt;
+          &lt;image src=&quot;../../assets/images/mines/news.png&quot; /&gt;
+      &lt;/view&gt;
+      &lt;view class=&quot;page-items-md&quot;&gt;我的消息&lt;/view&gt;
+      &lt;view class=&quot;page-items-others&quot;&gt;&lt;/view&gt;
+      &lt;view class=&quot;page-items-ft&quot;&gt;&gt;&lt;/view&gt;
+  &lt;/view&gt;
+
+  tomyNews:function(e) {
+  wx.navigateTo({
+    url:&apos;news/news&apos;
+  })
+},
+</code></pre><p>需要注意的是：程序中要求页面的层级最多只能有五层，因为这种方式保留当前页面，也就是说以这种方式跳转页面，最多只能打开5个页面。</p>
+<h4 id="（2）使用-switchTab-方法"><a href="#（2）使用-switchTab-方法" class="headerlink" title="（2）使用 switchTab 方法"></a>（2）使用 switchTab 方法</h4><p>该方法能够跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面。</p>
+<pre><code>wx.switchTab({
+          url:&apos;../leader/leader&apos;,
+          complete:function(res) {
+          }
+        })
+</code></pre><h3 id="5、swiper实现轮播"><a href="#5、swiper实现轮播" class="headerlink" title="5、swiper实现轮播"></a>5、swiper实现轮播</h3><p>通过 swiper 和 swiper-item 实现了书桌页面的轮播效果。</p>
+<p><img src="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/data4.gif" alt="img"> </p>
+<p>这里的相关属性就直接使用了网上的图片：</p>
+<p><img src="https://raw.githubusercontent.com/Hwj1220/wangyi_reading/master/assets/readmeImage/v2-37f8891696e8daf279bbfb8c1d73a421_hd.jpg" alt="img"> </p>
+<pre><code>&lt;swiper class=&quot;swiper&quot; indicator-dots=&quot;true&quot; 
+interval=&quot;5000&quot; duration=&quot;1000&quot;&gt;
+        &lt;swiper-item&gt;
+            &lt;view class=&quot;page__bd&quot;&gt;
+                &lt;view class=&quot;page__bd-books center&quot;&gt;
+                   &lt;image
+                    src=&quot;../../assets/images/book1.png&quot; /&gt;
+                &lt;/view&gt;
+                &lt;view class=&quot;page__bt&quot;&gt;
+                    &lt;view class=&quot;page__bt-readings&quot;&gt;
+                    南风知我意&lt;/view&gt;
+                    &lt;view class=&quot;page__bt-items center&quot;&gt;
+                        &lt;view&gt;1186人在读&lt;/view&gt;
+                        &lt;image 
+                        src=&quot;../../assets/images/rg.png&quot; /&gt;
+                    &lt;/view&gt;
+                &lt;/view&gt;
+            &lt;/view&gt;
+        &lt;/swiper-item&gt;
+ &lt;/swiper&gt;
+</code></pre><p>其中，swiper-item 可以通过 wx:for 来循环。</p>
+<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p>这一次的小程序开发，让我学到了很多东西。我们是为了学习而开发项目。因此在coding的时候要沉住气，不要急躁，遇到问题就及时的去查文档或者请教别人，然后多想一想实现的方法，是不是还能够通过其他办法来实现。这样在不断的思考和解决问题中，在不断的踩坑中才能让自己快速的成长起来。</p>
+<p>另外，其实还有很多功能和细节没有处理好，这一次的分享并不代表着结束，通过不断的学习，还将不断的对项目功能进行完善和处理各种细节。</p>
+<pre><code>☝想要一个star哦☺
+</code></pre><h3 id="欢迎一起交流学习哟-☞-782835831-qq-com"><a href="#欢迎一起交流学习哟-☞-782835831-qq-com" class="headerlink" title="欢迎一起交流学习哟 ☞ 782835831@qq.com"></a>欢迎一起交流学习哟 ☞ 782835831@qq.com</h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/XCX/" rel="tag"># XCX</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/30/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="John Doe" />
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">Artikel</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">Tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目地址：杳杳飞花-Reading"><span class="nav-number">1.</span> <span class="nav-text">项目地址：杳杳飞花/Reading</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目预览："><span class="nav-number">2.</span> <span class="nav-text">项目预览：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目准备："><span class="nav-number">3.</span> <span class="nav-text">项目准备：    </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目开发过程："><span class="nav-number">4.</span> <span class="nav-text">项目开发过程：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、开始项目"><span class="nav-number">4.1.</span> <span class="nav-text">1、开始项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、页面布局和样式"><span class="nav-number">4.2.</span> <span class="nav-text">2、页面布局和样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、使用-easy-mock-造数据"><span class="nav-number">4.3.</span> <span class="nav-text">3、使用 easy-mock 造数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目基本功能："><span class="nav-number">5.</span> <span class="nav-text">项目基本功能：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、小程序启动页面的实现"><span class="nav-number">5.1.</span> <span class="nav-text">1、小程序启动页面的实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、跳转页面时获取id-获取不同数据"><span class="nav-number">5.2.</span> <span class="nav-text">2、跳转页面时获取id, 获取不同数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、对navigationBarTitleText的动态修改"><span class="nav-number">5.3.</span> <span class="nav-text">3、对navigationBarTitleText的动态修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、两种页面跳转方式"><span class="nav-number">5.4.</span> <span class="nav-text">4、两种页面跳转方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#（1）使用-navigator-方式"><span class="nav-number">5.4.1.</span> <span class="nav-text">（1）使用 navigator 方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（2）使用-switchTab-方法"><span class="nav-number">5.4.2.</span> <span class="nav-text">（2）使用 switchTab 方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、swiper实现轮播"><span class="nav-number">5.5.</span> <span class="nav-text">5、swiper实现轮播</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结："><span class="nav-number">6.</span> <span class="nav-text">总结：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#欢迎一起交流学习哟-☞-782835831-qq-com"><span class="nav-number">6.1.</span> <span class="nav-text">欢迎一起交流学习哟 ☞ 782835831@qq.com</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
