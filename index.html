@@ -312,15 +312,64 @@
 
       
         
-          <hr>
+          
+            <hr>
 <h3 id="学习来源：阮一峰网络日志"><a href="#学习来源：阮一峰网络日志" class="headerlink" title="学习来源：阮一峰网络日志"></a>学习来源：阮一峰网络日志</h3><p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank" rel="noopener">Flex 布局教程：语法篇</a><br>    <a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html" target="_blank" rel="noopener">Flex 布局教程：实例篇</a><br>    <a href="https://codepen.io/LandonSchropp/pen/KpzzGo" target="_blank" rel="noopener">骰子demo</a></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/30/flex-notes/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+<hr>
+<h3 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h3><h4 id="1-flex-direction"><a href="#1-flex-direction" class="headerlink" title="1. flex-direction"></a>1. flex-direction</h4><p>flex-direction属性决定主轴的方向（即项目的排列方向）。</p>
+<pre><code>.box {
+  flex-direction: row | row-reverse | column | column-reverse;
+}
+</code></pre><ul>
+<li>row (默认值)： 主轴为水平方向，起点在左端</li>
+<li>row-reverse: 主轴为水平方向，起点在右端</li>
+<li>column：主轴为垂直方向，起点在上沿</li>
+<li>column-reverse：主轴为垂直方向，起点在下沿</li>
+</ul>
+<h4 id="2-align-self"><a href="#2-align-self" class="headerlink" title="2.align-self"></a>2.align-self</h4><p> align-self 属性允许单个项目与其他项目不一样的对齐方式，可覆盖 align-items 属性。默认值为 auto ，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch 。</p>
+<pre><code>.item {
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+    }
+</code></pre><h4 id="3-flex-wrap"><a href="#3-flex-wrap" class="headerlink" title="3.flex-wrap"></a>3.flex-wrap</h4><p>默认情况下，项目都排在一条线（又称“轴线”）上。flex-wrap 属性定义的是如果一条线上排不下如何换行问题。</p>
+<pre><code>.box{
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+</code></pre><ul>
+<li>nowrap(默认值): 不换行</li>
+<li>wrap：换行，第一行在上方</li>
+<li>wrap-reverse：换行，第一行在下方</li>
+</ul>
+<h4 id="4-justify-content"><a href="#4-justify-content" class="headerlink" title="4.justify-content"></a>4.justify-content</h4><p>justify-content 属性定义了项目在主轴上的对齐方式。</p>
+<pre><code>.box {
+  justify-content: flex-start | flex-end | center | space-between | space-around;
+}
+</code></pre><ul>
+<li>flex-start(默认值)：左对齐</li>
+<li>flex-end：右对齐</li>
+<li>center：居中</li>
+<li>space-between：两端对齐，项目之间的间隔都相等</li>
+<li>space-around：每个项目两侧的间隔相等。所以项目之间的间隔比项目与边框的间隔大一倍</li>
+</ul>
+<h4 id="5-flex-grow"><a href="#5-flex-grow" class="headerlink" title="5.flex-grow"></a>5.flex-grow</h4><p>flex-grow 属性定义项目的放大比例，默认值为0，即如果存在剩余空间，也不放大。</p>
+<pre><code>.item {
+  flex-grow: &lt;number&gt;; /* default 0 */
+}
+</code></pre><p>如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。</p>
+<h4 id="6-flex-shrink"><a href="#6-flex-shrink" class="headerlink" title="6.flex-shrink"></a>6.flex-shrink</h4><p>flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</p>
+<pre><code>.item {
+  flex-shrink: &lt;number&gt;; /* default 1 */
+}
+</code></pre><p>如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。<br>负值对该属性无效。</p>
+<h4 id="7-object-fit"><a href="#7-object-fit" class="headerlink" title="7.object-fit"></a>7.object-fit</h4><p>object-fit 属性指定替换元素的内容应该如何适应其使用的高度和宽度确定的框。</p>
+<ul>
+<li>fill:此值为boject-fit的默认值，替换内容的大小被设置为填充元素的内容框，也就是说，元素的内容扩大到完全填充容器的外形尺寸，即使这打破其内在的宽高比。</li>
+<li>contain：替换元素内容大小保持长宽比例填充元素内容容器，其具体对象大小被解析为一个包含元素的宽度和高度。也就是说，如果你在替换元素上设置一个明确的高度和宽度，此值将导致内容大小，完全在固定的比例显示，但仍在元素尺寸内显示。</li>
+<li>cover：替换元素内容大小保持长宽比例填充元素内容容器，其具体对象大小被解析为覆盖整个元素的宽度和高度。也就是说，替换元素内容大小保持长宽比，但改变宽度和高度，以便完全覆盖内容元素。</li>
+<li>none：替换元素内容不调整大小以适应内部元素的容器，内容完全忽略设置在元素上的任何高度和权重，并且仍在元素尺寸内显示。</li>
+<li>scale-down：当内容大小设置了non或contain，将导致具体对象变得更小。</li>
+</ul>
+
+          
         
       
     </div>
